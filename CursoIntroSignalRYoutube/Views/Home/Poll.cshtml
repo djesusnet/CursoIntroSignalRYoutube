@@ -1,0 +1,39 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            Usuário: <input type="text" id="userInput" />
+        </div>
+        <div class="col-6">&nbsp;</div>
+    </div>
+    <div class="row">Votação: Qual o seu canal favorito no Youtube?&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+            <!-- input type="radio" name="group1" id="r1" value="1" /><label for="r1"> button one</label>-->
+
+            <input type="radio" name="myChannel" id="danielJesus" value="Daniel Jesus" />
+            <label for="captainMarvel">Daniel Jesus</label>
+            <br /><span id="danielJesusBlock"></span><br />
+            <input type="radio" name="myChannel" id="canalDotNet" value="Canal DotNet" />
+            <label for="canalDotNetAmerica">Canal DotNet</label>
+            <br /><span id="canalDotNetBlock"></span><br />
+            <input type="radio" name="myChannel" id="naoPossui" value="Eu não possuo nenhum canal favorito" />
+            <label for="captainMe">Não possuo nenhum canal favorito.</label>
+            <br /><span id="naoPossuiBlock"></span><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input type="button" id="sendButton" value="Vote Now" />
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/poll.js"></script>
